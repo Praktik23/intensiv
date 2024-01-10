@@ -1,0 +1,27 @@
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'settings';
+@import 'vendor';
+
+//общие компоненты
+@import 'components/logo.scss';
+
+@import 'components/title';
+
+//основные стили
+@import 'components/header';
+
+@import 'components/hero-section';
+
+@import 'components/about-me';
+
+@import 'components/skills';
+
+@import 'components/services';
+
+@import 'components/portfolio';
+
+
+@import 'components/feedback';

@@ -1,0 +1,53 @@
+.portfolio {
+    background-color: $white;
+    padding-bottom: rem(140);
+
+    &-box {
+        position: relative;
+    }
+
+    &-title {
+        padding-bottom: rem(60);
+        text-align: center;
+    }
+
+    &-filters {
+        display: flex;
+        gap: rem(35);
+        padding-bottom: rem(60);
+        justify-content: center;
+    }
+
+    &-filter__button {
+        font-size: rem(24);
+        font-weight: 600;
+        line-height: 160%;
+        &:hover {
+            color: #2352DE;
+        }
+
+        &.mixitup-control-active {
+            color: #2352DE;
+        }
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(45);
+        justify-items: center;
+    }
+
+    &-button {
+        padding: rem(12) rem(24);
+        background-color: #2352DE;
+        margin: 0 auto;
+        margin-top: rem(60);
+        display: block;
+        font-size: rem(18);
+        font-weight: 600;
+        line-height: 130%;
+        color: $white;
+    }
+
+}

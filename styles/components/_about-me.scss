@@ -1,0 +1,31 @@
+.about-me {
+    background-color: $white;
+    padding-top: rem(160);
+    padding-bottom: rem(90);
+
+    &-title {
+        padding-bottom: rem(59);
+
+        &::before {
+            content: '';
+            bottom: rem(65);
+            position: absolute;
+            width: rem(206);
+            height: rem(15);
+            background-color: rgba(35, 82, 222, 0.10);
+            
+        }
+    }
+
+    &-text {
+        color: $main-text-color;
+        font-size: rem(18);
+        font-weight: 400;
+        line-height: 160%;
+        font-family: $OpenSans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    p {
+        padding-bottom: rem(30);
+    }
+}

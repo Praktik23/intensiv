@@ -1,0 +1,25 @@
+html {
+    font-size: 100vw / 1440*10;
+
+    @include mobile {
+        font-size: 100vw /360*10;
+    }
+}
+
+
+body {
+    min-width: rem(100);
+    font-family: $OpenSans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: rem(18);
+    background-color: $white;
+    color: $main-text-color;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.container {
+    width: rem(1200);
+    padding: 0 rem(15);
+    max-width: 100%;
+    margin: 0 auto;
+}

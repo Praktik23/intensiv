@@ -1,0 +1,38 @@
+.services {
+    background-color: $white;
+    padding-top: rem(140);
+    padding-bottom: rem(140);
+
+    &-title {
+        padding-bottom: rem(60);
+        &::before {
+            content: '';
+            bottom: rem(65);
+            position: absolute;
+            width: rem(165);
+            height: rem(15);
+            left: rem(3);
+            background-color: rgba(35, 82, 222, 0.10);
+            
+        }
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(90);
+    }
+
+    &-grid-title {
+        margin-top: rem(30);
+        margin-bottom: rem(25);
+        font-size: rem(28);
+        font-weight: 600;
+        line-height: 130%;
+    }
+
+    &-descr {
+        font-size: rem(16);
+        
+    }
+}

@@ -1,0 +1,66 @@
+.skills {
+    background-color: $gray;
+    padding-top: rem(262);
+    padding-bottom: rem(140);
+
+    &-title {
+        margin-bottom: rem(60);
+
+        &::before {
+            content: '';
+            bottom: rem(5);
+            position: absolute;
+            width: rem(195);
+            height: rem(15);
+            left: rem(3);
+            background-color: rgba(35, 82, 222, 0.10);
+            
+        }
+    }
+
+&-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+    
+    &-img {
+        background-image: url(/img/skills/foto.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: rem(450);
+        width: rem(415);
+    }
+
+    &-list {
+        margin-left: rem(65);
+        flex-grow: 1;
+        // width: 48vw;
+    }
+
+    &-list__item {
+        @include notLastChild {
+            margin-bottom: rem(86);
+        }
+        font-weight: 600;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+
+    &-inside__stripe {
+        height: rem(32);
+        background-color: #DBDBED;
+    }
+
+    &-outside__stripe {
+        height: 100%;
+        background-color: #2352DE;
+        position: relative;
+        &::after {
+            content: attr(data-percent);
+            position: absolute;
+            right: 0;
+            top: rem(35);
+        }
+    }
+}
