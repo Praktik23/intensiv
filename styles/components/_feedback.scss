@@ -6,11 +6,25 @@
     &-title {
         text-align: center;
         margin-bottom: rem(60);
+
+        &::before {
+            content: '';
+            bottom: rem(5);
+            position: absolute;
+            width: rem(453);
+            height: rem(15);
+            left: rem(358);
+            background-color: rgba(35, 82, 222, 0.10);
+        }
     }
 
     &-inner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-comment {
+        padding-top: rem(28);
     }
 
     &-foto {
@@ -21,11 +35,37 @@
         text-align: center;
         margin-top: rem(20);
         margin-bottom: rem(20);
+        color: #2352DE;
+        font-size: rem(24);
+        font-weight: 600;
+        line-height: 130%
     }
 
     &-text {
         text-align: center;
         margin: 0 auto;
         max-width: rem(400);
+        font-size: rem(24);
+        font-weight: 300;
+        line-height: 130%;
+        font-style: italic;
+    }
+
+    &-video {
+        display: block;
+        width: 100%;
+        height: rem(400);
+        @include flex-all-center;
+        @include bg-cover;
+        background-image: url(/img/feedback/video.jpg);
+        background-color: rgba(#000000, 0.30);
+        background-blend-mode: overlay;
+    }
+
+
+
+    &-play {
+        width: rem(86);
+        height: rem(100);
     }
 }

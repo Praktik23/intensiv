@@ -10,5 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     let mixer = mixitup('.portfolio-list');
+
+    Fancybox.bind("[data-fancybox]", {});
     
 });

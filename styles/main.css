@@ -1,6 +1,7 @@
 /*font-family: 'Open Sans', sans-serif;
 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css");
 @font-face {
   font-family: "font-name";
   src: url("../fonts/OpenSans-Italic.woff") format("woff");
@@ -377,6 +378,15 @@ body {
   padding-bottom: 6rem;
   text-align: center;
 }
+.portfolio-title::before {
+  content: "";
+  bottom: 6.5rem;
+  position: absolute;
+  width: 30rem;
+  height: 1.5rem;
+  left: 43.5rem;
+  background-color: rgba(35, 82, 222, 0.1);
+}
 .portfolio-filters {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,9 +435,21 @@ body {
   text-align: center;
   margin-bottom: 6rem;
 }
+.feedback-title::before {
+  content: "";
+  bottom: 0.5rem;
+  position: absolute;
+  width: 45.3rem;
+  height: 1.5rem;
+  left: 35.8rem;
+  background-color: rgba(35, 82, 222, 0.1);
+}
 .feedback-inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+.feedback-comment {
+  padding-top: 2.8rem;
 }
 .feedback-foto {
   margin: 0 auto;
@@ -436,9 +458,72 @@ body {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  color: #2352DE;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 130%;
 }
 .feedback-text {
   text-align: center;
   margin: 0 auto;
   max-width: 40rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 130%;
+  font-style: italic;
+}
+.feedback-video {
+  display: block;
+  width: 100%;
+  height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/img/feedback/video.jpg);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+}
+.feedback-play {
+  width: 8.6rem;
+  height: 10rem;
+}
+
+.stats {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+  background-color: #fff;
+}
+.stats-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.7rem;
+}
+.stats-item {
+  text-align: center;
+  max-width: 28rem;
+  max-height: 28.7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #F6F6F8;
+}
+.stats-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 130%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.stats-number {
+  font-size: 4.4rem;
+  font-weight: 600;
+  line-height: 100%;
 }/*# sourceMappingURL=main.css.map */

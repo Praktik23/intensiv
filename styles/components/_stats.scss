@@ -1,0 +1,36 @@
+.stats {
+    padding-top: rem(140);
+    padding-bottom: rem(140);
+    background-color: $white;
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(17);
+    }
+
+    &-item {
+        text-align: center;
+        max-width: rem(280);
+        max-height: rem(287);
+        padding-top: rem(50);
+        padding-bottom: rem(50);
+        background-color: $gray;
+    }
+
+&-text {
+        font-size: rem(18);
+        font-weight: 400;
+        line-height: 130%;
+        padding-top: rem(20);
+        padding-bottom: rem(20);
+    }
+
+    &-number {
+        font-size: rem(44);
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    
+}
